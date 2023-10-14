@@ -1,17 +1,3 @@
-export async function fetchCars() {
-    const headers = {
-        'X-RapidAPI-Key': '7d55684973msh5c6253bb73e0b59p120ef2jsn7ee5cebbb58f',
-        'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
-    }
-
-    const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla', {
-        headers: headers
-    });
-
-    const result = await response.json();
-
-    return result;
-}
 
 export const calculateCarRent = (city_mpg: number, year: number) => {
     const basePricePerDay = 50; // Base rental price per day in dollars
